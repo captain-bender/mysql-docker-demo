@@ -6,13 +6,14 @@ This repository contains a Dockerfile and initialization SQL script to run a MyS
 
 - Docker Desktop installed (Windows, Mac, Linux)
 - Basic knowledge of Docker commands
+- Install a MySQL client, such as the [DBeaver](https://dbeaver.io/download/) app, or something relevant compatible with your OS.
 
 ## Getting Started
 
 1. Clone this repository:
 ```
 git clone https://github.com/captain-bender/mysql-docker-demo.git
-cd mysql-docker-classroom
+cd mysql-docker-demo
 ```
 
 3. Run the container:
