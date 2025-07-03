@@ -10,15 +10,16 @@ This repository contains a Dockerfile and initialization SQL script to run a MyS
 ## Getting Started
 
 1. Clone this repository:
-
 ```
 git clone https://github.com/yourusername/mysql-docker-classroom.git
 cd mysql-docker-classroom
 ```
+
 3. Run the container:
 ```
 docker run -d --name mysql-demo -p 3306:3306 classicmodels-mysql
 ```
+
 4. Connect to MySQL using your preferred client (e.g., DBeaver):
 - Host: `localhost`
 - Port: `3306`
@@ -32,6 +33,5 @@ SELECT * FROM customers LIMIT 5;
 ```
 
 ## Troubleshooting
-
 - If you get a "Public Key Retrieval is not allowed" error in DBeaver, set `allowPublicKeyRetrieval=true` in the connection properties.
 - Make sure Docker Desktop is running and WSL2 is enabled on Windows.
