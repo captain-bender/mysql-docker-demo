@@ -2,6 +2,8 @@
 
 This repository contains a Dockerfile and initialization SQL script to run a MySQL database pre-populated with the Classicmodels sample dataset. It is designed for teaching and experimentation.
 
+<center><img src="pic.png" alt="drawing" width="500"/></center>
+
 ## Requirements
 
 - Docker Desktop installed (Windows, Mac, Linux)
