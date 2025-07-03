@@ -28,7 +28,7 @@ docker run -d --name mysql-demo -p 3306:3306 classicmodels-mysql
 - Password: `passwd`
 - Database: `classicmodels`
 
-5. Run sample queries, for example:
+5. Have a look in the [database schema](./MySQL-Sample-Database-Diagram-PDF-A4.pdf) and run sample queries, for example:
 ```
 SELECT * FROM customers LIMIT 5;
 ```
