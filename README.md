@@ -36,3 +36,6 @@ SELECT * FROM customers LIMIT 5;
 ## Troubleshooting
 - If you get a "Public Key Retrieval is not allowed" error in DBeaver, set `allowPublicKeyRetrieval=true` in the connection properties.
 - Make sure Docker Desktop is running and WSL2 is enabled on Windows.
+
+## Credits
+- MySQL sample database from [MySQLTutorial](https://www.mysqltutorial.org/getting-started-with-mysql/mysql-sample-database/) website.
