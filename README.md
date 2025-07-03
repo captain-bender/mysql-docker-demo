@@ -11,7 +11,7 @@ This repository contains a Dockerfile and initialization SQL script to run a MyS
 
 1. Clone this repository:
 ```
-git clone https://github.com/yourusername/mysql-docker-classroom.git
+git clone https://github.com/captain-bender/mysql-docker-demo.git
 cd mysql-docker-classroom
 ```
 
