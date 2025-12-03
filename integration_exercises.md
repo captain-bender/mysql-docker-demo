@@ -1,4 +1,4 @@
-# Optional Extension for Python users
+# Use Python to connect to the datbase
 
 **Prerequisite (quick):** create and activate a Python virtual environment and install dependencies before running the examples below.
 

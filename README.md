@@ -41,8 +41,9 @@ SELECT * FROM customers LIMIT 5;
 after writing the query, please press play.
 
 5. Experiment with the exercises
-- Basic SQL commands and mini-projects [here](./basic_exercises.md)
-- Optional integration with Python clients [here](./optional_exercises.md)
+- Basic SQL command [here](./basic_exercises.md)
+- Mini-projects [here](./mini-projects.md)
+- Integration with Python clients [here](./integration_exercises.md)
 
 
 6. Stopping and cleaning (start from scratch)
