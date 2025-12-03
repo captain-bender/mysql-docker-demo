@@ -18,22 +18,51 @@ git clone https://github.com/captain-bender/mysql-docker-demo.git
 cd mysql-docker-demo
 ```
 
-3. Run the container:
+2. Build the container:
 ```
-docker run -d --name mysql-demo -p 3306:3306 classicmodels-mysql
+docker build -t classicmodels-mysql .
 ```
 
-4. Connect to MySQL using your preferred client (e.g., DBeaver):
+3. Run the container (two options)
+
+- Using Docker Compose (recommended):
+
+```powershell
+cd C:\Users\capta\OneDrive\Documents\mysql-docker-demo
+docker compose up -d --build
+```
+
+This builds the image from the `Dockerfile`, creates a named volume for MySQL data, and starts the `mysql-demo` container.
+
+4. Connect to MySQL using your preferred client (e.g., DBeaver). Your database type is MySQL ([figure](./images/pic2.png)), and the connection details are the following ([figure](./images/pic3.png)):
 - Host: `localhost`
 - Port: `3306`
 - User: `root`
 - Password: `passwd`
 - Database: `classicmodels`
 
-5. Have a look in the [database schema](./MySQL-Sample-Database-Diagram-PDF-A4.pdf) and run sample queries, for example:
+5. Have a look in the [database schema](./MySQL-Sample-Database-Diagram-PDF-A4.pdf) and run sample queries by selecting the SQL tab ([figure](./images/pic1.png)), for example ([figure](./images/pic4.png)):
 ```
 SELECT * FROM customers LIMIT 5;
 ```
+after writing the query, please press play.
+
+
+## Stopping and cleaning (start from scratch)
+
+If you want to stop the stack and remove all containers, images and data so the next `up` starts from a fresh state, follow the commands below.
+
+- Using Docker Compose: this stops services, removes containers, networks, images that were built by Compose, and deletes named volumes created by the compose file. WARNING: deleting volumes will permanently remove the database contents.
+
+```powershell
+cd C:\Users\<your path>\Documents\mysql-docker-demo
+docker compose down --rmi all -v --remove-orphans
+```
+
+- What the flags do:
+	- `--rmi all`: removes images built by Compose (your `classicmodels-mysql` image created by `build`).
+	- `-v`: removes named volumes declared in `docker-compose.yml` (this deletes DB data).
+	- `--remove-orphans`: removes containers from previous runs that are not defined in this compose file.
 
 ## Troubleshooting
 - If you get a "Public Key Retrieval is not allowed" error in DBeaver, set `allowPublicKeyRetrieval=true` in the connection properties.
