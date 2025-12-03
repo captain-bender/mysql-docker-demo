@@ -71,7 +71,7 @@ C. Employee & Sales Structure
 
     1. List all employees who do not have any customers assigned.
 
-If you want some help, check [sample answers](./optional_exercises.md)
+If you want some help, check [sample answers](./mini_projects_solutions.md)
 
 <br>
 <br>
