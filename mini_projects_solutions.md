@@ -1,6 +1,6 @@
-# Solutions — Basic Exercises (Classicmodels)
+# Solutions — Mini Projects (Classicmodels)
 
-This file provides sample SQL answers for the exercises in `basic_exercises.md`. These are intended as reference solutions for students; they assume the default Classicmodels schema present in `mysqlsampledatabase.sql`.
+This file provides sample SQL answers for the mini projects in `basic_exercises.md`.
 
 ---
 

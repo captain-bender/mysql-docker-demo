@@ -50,7 +50,7 @@ If you want some help, check [sample answers](./basic_exercises_solutions.md)
 <br>
 <br>
 
-## Mini projects 
+## Mini projects (Difficulty level medium)
 Choose One of the Following Mini-Projects:
 
 A. Customer & Order Analysis
@@ -92,13 +92,3 @@ GROUP BY customerNumber
 ORDER BY total_payments DESC
 LIMIT 5;
 ```
-<br>
-<br>
-<br>
-
-## Tips for Experimentation
-- Try changing the LIMIT, sorting, or grouping to see different results.
-
-- Modify queries to answer related questions (e.g., filter by country, date, or product line).
-
-
