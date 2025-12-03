@@ -18,12 +18,10 @@ git clone https://github.com/captain-bender/mysql-docker-demo.git
 cd mysql-docker-demo
 ```
 
-2. Run the container (two options)
-
-- Using Docker Compose (recommended):
+2. Run the container using Docker Compose:
 
 ```powershell
-cd C:\Users\capta\OneDrive\Documents\mysql-docker-demo
+cd C:\Users\<your-path>\Documents\mysql-docker-demo
 docker compose up -d --build
 ```
 
@@ -42,8 +40,12 @@ SELECT * FROM customers LIMIT 5;
 ```
 after writing the query, please press play.
 
+5. Experiment with the exercises
+- Basic SQL commands and mini-projects [here](./basic_exercises.md)
+- Optional integration with Python clients [here](./optional_exercises.md)
 
-## Stopping and cleaning (start from scratch)
+
+6. Stopping and cleaning (start from scratch)
 
 If you want to stop the stack and remove all containers, images and data so the next `up` starts from a fresh state, follow the commands below.
 
@@ -60,8 +62,8 @@ docker compose down --rmi all -v --remove-orphans
 	- `--remove-orphans`: removes containers from previous runs that are not defined in this compose file.
 
 ## Troubleshooting
-- If you get a "Public Key Retrieval is not allowed" error in DBeaver, set `allowPublicKeyRetrieval=true` in the connection properties.
-- Make sure Docker Desktop is running and WSL2 is enabled on Windows.
+- If you get a "Public Key Retrieval is not allowed" error in DBeaver, set `allowPublicKeyRetrieval=true` in the connection properties. In the "Connection Settings" window, click the "Driver Settings" button, select the "Defualt properties" tab, right-click inside the table and click the "Add ne property" in the pop-up menu, first add the name of the property "allowPublicKeyRetrieval" and then the value "true" ([Figure](./images/pic5.png)).
+
 
 ## Credits
 - MySQL sample database from [MySQLTutorial](https://www.mysqltutorial.org/getting-started-with-mysql/mysql-sample-database/) website.
