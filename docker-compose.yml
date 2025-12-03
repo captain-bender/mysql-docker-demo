@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  db:
+    build: .
+    image: classicmodels-mysql
+    container_name: mysql-demo
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "passwd"
+      MYSQL_DATABASE: "classicmodels"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    restart: unless-stopped
+
+volumes:
+  mysql_data:
