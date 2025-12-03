@@ -18,12 +18,7 @@ git clone https://github.com/captain-bender/mysql-docker-demo.git
 cd mysql-docker-demo
 ```
 
-2. Build the container:
-```
-docker build -t classicmodels-mysql .
-```
-
-3. Run the container (two options)
+2. Run the container (two options)
 
 - Using Docker Compose (recommended):
 
@@ -34,14 +29,14 @@ docker compose up -d --build
 
 This builds the image from the `Dockerfile`, creates a named volume for MySQL data, and starts the `mysql-demo` container.
 
-4. Connect to MySQL using your preferred client (e.g., DBeaver). Your database type is MySQL ([figure](./images/pic2.png)), and the connection details are the following ([figure](./images/pic3.png)):
+3. Connect to MySQL using your preferred client (e.g., DBeaver). Your database type is MySQL ([figure](./images/pic2.png)), and the connection details are the following ([figure](./images/pic3.png)):
 - Host: `localhost`
 - Port: `3306`
 - User: `root`
 - Password: `passwd`
 - Database: `classicmodels`
 
-5. Have a look in the [database schema](./MySQL-Sample-Database-Diagram-PDF-A4.pdf) and run sample queries by selecting the SQL tab ([figure](./images/pic1.png)), for example ([figure](./images/pic4.png)):
+4. Have a look in the [database schema](./MySQL-Sample-Database-Diagram-PDF-A4.pdf) and run sample queries by selecting the SQL tab ([figure](./images/pic1.png)), for example ([figure](./images/pic4.png)):
 ```
 SELECT * FROM customers LIMIT 5;
 ```
