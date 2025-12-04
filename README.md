@@ -12,6 +12,8 @@ This repository contains a Dockerfile and initialization SQL script to run a MyS
 
 ## Getting Started
 
+0. Start your Docker Desktop application
+
 1. Clone this repository:
 ```
 git clone https://github.com/captain-bender/mysql-docker-demo.git
