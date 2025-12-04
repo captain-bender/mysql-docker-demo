@@ -61,6 +61,14 @@ python ./test_script.py
 ```
 and stop the execution, using the combination of CTRL-C keys on your keyboard.
 
+Complete your experiments and type **deactivate** to terminal ine order to stop venv.
+
+<br>
+<br>
+<br>
+<br>
+
+
 ## Python virtual environment (`venv`) and `requirements.txt`
 
 These optional exercises use Python packages. It's best practice to create an isolated virtual environment and install dependencies from a `requirements.txt` file.
@@ -91,6 +99,6 @@ pip install -r requirements.txt
 4. Run your Python script while the venv is active:
 
 ```powershell
-python optional_plot.py
+python test_script.py
 ```
 
