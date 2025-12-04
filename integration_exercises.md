@@ -5,7 +5,7 @@
 Quick commands (PowerShell):
 
 ```powershell
-cd C:\Users\capta\OneDrive\Documents\mysql-docker-demo
+cd C:\Users\<your_path>\Documents\mysql-docker-demo
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
@@ -78,7 +78,7 @@ Recommended workflow (PowerShell on Windows):
 1. Create a venv in the project folder:
 
 ```powershell
-cd C:\Users\capta\OneDrive\Documents\mysql-docker-demo
+cd C:\Users\<your_path>\Documents\mysql-docker-demo
 python -m venv .venv
 ```
 
