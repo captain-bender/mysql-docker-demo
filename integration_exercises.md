@@ -61,7 +61,12 @@ python ./test_script.py
 ```
 and stop the execution, using the combination of CTRL-C keys on your keyboard.
 
-Complete your experiments and type **deactivate** to terminal ine order to stop venv.
+Complete your experiments and type **deactivate** to terminal in order to stop venv.
+
+```
+deactivate
+```
+so you will not see **(venv)** at the beginning of the line.
 
 <br>
 <br>
