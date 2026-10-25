@@ -2,7 +2,7 @@
 
 This repository contains a Dockerfile and initialization SQL script to run a MySQL database pre-populated with the Classicmodels sample dataset, plus a browser-based client (phpMyAdmin) so you can explore it without installing anything else. It is designed for teaching and experimentation.
 
-<center><img src="pic.png" alt="drawing" width="500"/></center>
+<center><img src="./images/pic.png" alt="drawing" width="500"/></center>
 
 ## Requirements
 
