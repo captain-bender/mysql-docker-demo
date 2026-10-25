@@ -1,17 +1,38 @@
-version: "3.8"
-
 services:
   db:
     build: .
     image: classicmodels-mysql
     container_name: mysql-demo
     ports:
-      - "3306:3306"
+      - "3306:3306"          # used by DBeaver and the Python integration exercises
     environment:
       MYSQL_ROOT_PASSWORD: "passwd"
       MYSQL_DATABASE: "classicmodels"
     volumes:
       - mysql_data:/var/lib/mysql
+    healthcheck:
+      # Uses TCP (127.0.0.1) on purpose: during first-time initialisation MySQL
+      # runs a temporary socket-only server, so this only passes once the
+      # sample database has finished loading and the real server is up.
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-uroot", "-ppasswd", "--silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+    restart: unless-stopped
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: mysql-demo-ui
+    depends_on:
+      db:
+        condition: service_healthy   # wait until the database is ready
+    environment:
+      PMA_HOST: db                   # the MySQL service name (not localhost)
+      PMA_USER: root                 # auto-login, so students skip the login page
+      PMA_PASSWORD: passwd           # local teaching setup only, never expose this
+    ports:
+      - "8080:80"                    # open http://localhost:8080 in a browser
     restart: unless-stopped
 
 volumes:
