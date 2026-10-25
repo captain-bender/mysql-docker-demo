@@ -47,13 +47,16 @@ SELECT * FROM customers LIMIT 5;
 and press **Go** (bottom right) to run it.
 
 5. Experiment with the exercises
-- Basic SQL command [here](./basic_exercises.md)
-- Mini-projects [here](./mini_projects.md)
-- Integration with Python clients [here](./integration_exercises.md)
+- Basic SQL command [here](./basic-exercises/basic_exercises.md)
+- Integration with Python clients [here](./integration-exercises/integration_exercises.md)
+
+6. If you have a lot of time, you can try that:
+- Mini-projects [here](./mini-project/mini_projects.md)
+
 
 The Python exercises connect directly to MySQL on `localhost:3306`, so they work alongside phpMyAdmin with no extra setup.
 
-6. Stopping and cleaning (start from scratch)
+7. Stopping and cleaning (start from scratch)
 
 To simply stop the containers (your data is kept), run from the `mysql-docker-demo` folder:
 
